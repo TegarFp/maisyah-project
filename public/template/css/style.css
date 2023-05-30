@@ -1,0 +1,165 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu {
+    display: inline-block;
+    position: relative;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: linear-gradient(
+        0deg,
+        #31aae0 16.35%,
+        rgba(49, 170, 224, 0) 112.7%
+    );
+}
+
+.text {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+}
+
+.text::after {
+    content: "";
+    position: absolute;
+    background-color: #fa8a00;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+}
+.text:hover {
+    color: #fa8a00;
+}
+
+.text:hover::after {
+    width: 100%;
+}
+
+.banner {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-image: url("/image/beranda.png");
+    /* background-color: grey; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.banners {
+    margin-top: 75px;
+}
+
+.gabung {
+    font-size: 20px;
+}
+.gabung1 {
+    color: #31aae0;
+}
+
+.gabung2 {
+    font-size: 18px;
+    margin-top: 35px;
+}
+
+.btn-cari {
+    width: 100px;
+    height: 70px;
+    font-weight: 900;
+}
+
+.tentang-kami {
+    background: linear-gradient(
+        180deg,
+        #31aae0 16.42%,
+        rgba(49, 170, 224, 0.640625) 70.27%,
+        rgba(49, 170, 224, 0) 133.7%
+    );
+    width: 100%;
+    height: 405px;
+    left: 0px;
+    top: 1853px;
+}
+
+/* Login  */
+
+.login-card {
+    margin-top: 80px;
+}
+
+.kategori:hover {
+    background-color: #fff;
+    cursor: pointer;
+    transform: translate(5px);
+    transition: 0.3s;
+}
+
+.background {
+    margin-top: 77px;
+    width: 100%;
+    height: 250px;
+    background: #31aae0;
+}
+.background1 {
+    margin-top: 77px;
+    width: 100%;
+    height: 250px;
+    background: #1081B4;
+}
+
+
+
+
+
+/* @media screen and (max-width: 922px) {
+    .navbar-nav {
+      flex-direction: column;
+    }
+  
+    .navbar-nav .nav-item {
+      margin-bottom: 10px;
+    }
+  
+    .dropdown-menu {
+      min-width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .navbar-nav .nav-item {
+      text-align: center;
+    }
+  
+    .navbar-brand {
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      text-align: center;
+    }
+  
+    .dropdown-menu {
+      min-width: 120px;
+    }
+  
+    .dropdown-menu a {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 350px) {
+    .navbar-brand img {
+      max-width: 100px;
+    }
+  }
+   */
