@@ -19,7 +19,7 @@
           <a class="nav-link me-2 text {{ request()->is('layanan') ? 'active' : '' }}" href="/layanan">Layanan</a>
         </li>
         <li class="nav-item menu">
-          <a class="nav-link me-2  text" href="#">Hubungi Kami</a>
+          <a class="nav-link me-2  text" href="">Hubungi Kami</a>
         </li>
       </ul>
     </div>
@@ -47,7 +47,7 @@
           <li>
             <div class="input-group mt-3 border-0" role="button" style="min-width: 110px; max-width: 500px; height: 30px;" id="dropdownUser1" data-bs-toggle="dropdown2" aria-expanded="false">
               <svg xmlns="http://www.w3.org/2000/svg" class="ms-3" width="20" height="20" viewBox="0 0 384 512"><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM216 408c0 13.3-10.7 24-24 24s-24-10.7-24-24V305.9l-31 31c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l72-72c9.4-9.4 24.6-9.4 33.9 0l72 72c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-31-31V408z"/></svg>
-              <a href="#" class="dropdown-item text-decoration-none" style="margin-top: -4px; font-weight: 500; font-size: 16px; width: 130px; color: #14445D;">Status Lamaran</a>
+              <a href="/lowongan_status" class="dropdown-item text-decoration-none" style="margin-top: -4px; font-weight: 500; font-size: 16px; width: 130px; color: #14445D;">Status Lamaran</a>
             </div>
           </li>
           <li>

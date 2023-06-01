@@ -28,9 +28,27 @@
                   <td class="align-middle">{{ $pekerjaan->fungsi_kerja }}</td>
                   <td class="align-middle">{{ $pekerjaan->level }}</td>
                   <td class="align-middle">{{ $pekerjaan->lulusan }}</td>
-                  <td class="align-middle">{{ $pekerjaan->deskripsi }}</td>
-                  <td class="align-middle">{{ $pekerjaan->kualifikasi }}</td>
-                  <td class="align-middle">{{ $pekerjaan->benefits }}</td>
+                  <td class="align-middle">
+                    <ul>
+                      @foreach ($deskripsi as $list)
+                          <li>{{ $list }}</li>
+                      @endforeach
+                    </ul>
+                  </td>
+                  <td class="align-middle">
+                    <ul>
+                      @foreach ($kualifikasi as $list)
+                          <li>{{ $list }}</li>
+                      @endforeach
+                    </ul>
+                  </td>
+                  <td class="align-middle">
+                    <ul>
+                      @foreach ($benefits as $list)
+                          <li>{{ $list }}</li>
+                      @endforeach
+                    </ul>
+                  </td>
                   <td class="align-middle">{{ $pekerjaan->about }}</td>
                 </tr>
               </tbody>

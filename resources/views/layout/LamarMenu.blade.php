@@ -8,19 +8,19 @@
           </a>
         </div>
         <div class="input-group mt-2">
-          <a href="/lowongan_status" class="d-flex text-decoration-none " style="color: darkorange">
+          <a href="/lowongan_status?status=terkirim" class="d-flex text-decoration-none " style="color: darkorange">
             <i class="bi bi-file-earmark fa-xl"></i>
             <p class="ms-3 fw-bold">Terkirim</p>
           </a>
         </div>
         <div class="input-group mt-2">
-          <a href="/dalam-review" class="d-flex text-decoration-none" style="color: darkorange">
+          <a href="/lowongan_status?status=dalam-review" class="d-flex text-decoration-none" style="color: darkorange">
             <i class="bi bi-file-earmark-check fa-xl"></i>
             <p class="ms-3 fw-bold">Dalam Review</p>
           </a>
         </div>
         <div class="input-group mt-2">
-          <a href="/tidak-lolos" class="d-flex text-decoration-none" style="color: darkorange">
+          <a href="/lowongan_status?status=ditolak" class="d-flex text-decoration-none" style="color: darkorange">
             <i class="bi bi-file-earmark-x fa-xl"></i>
             <p class="ms-3 fw-bold">Tidak Lolos</p>
           </a>

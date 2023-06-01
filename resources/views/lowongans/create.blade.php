@@ -82,13 +82,13 @@
             <div class="col-lg-4 mb-4">
               <label for="file">Kualifikasi</label>
               <div class="input-group ">
-                <input type="text" name="kualifikasi" class="form-control" placeholder="Masukkan Kualifikasi">
+                <textarea name="kualifikasi" class="form-control" placeholder="Masukkan Kualifikasi"></textarea>
               </div>
             </div>
             <div class="col-lg-4 mb-4">
               <label for="file">Benefits</label>
               <div class="input-group ">
-                <input type="text" name="benefits" class="form-control" placeholder="Masukkan Benefits">
+                <textarea type="text" name="benefits" class="form-control" placeholder="Masukkan Benefits"></textarea>
               </div>
             </div>
             <div class="col-lg-4 mb-4">

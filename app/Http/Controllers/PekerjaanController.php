@@ -51,7 +51,16 @@ class PekerjaanController extends Controller
     public function show(string $id)
     {
         $pekerjaan = Pekerjaan::findOrFail($id);
-        return view('lowongans.show',  compact('pekerjaan'));
+        $deskripsiArray = explode("\r", $pekerjaan->deskripsi);
+        $kualifikasiiArray = explode("\r", $pekerjaan->kualifikasi);
+        $benefitsArray = explode("\r", $pekerjaan->benefits);
+        $deskripsiArray = explode("\r", $pekerjaan->deskripsi);
+        return view('lowongans.show', [
+            'pekerjaan' => $pekerjaan,
+            'deskripsi' => $deskripsiArray,
+            'kualifikasi' => $kualifikasiiArray,
+            'benefits' => $benefitsArray,
+        ]);
     }
 
     /**
@@ -59,9 +68,18 @@ class PekerjaanController extends Controller
      */
     public function edit(string $id)
     {
-        $pekerjaans = Pekerjaan::all();
+        $pekerjaan = Pekerjaan::all();
         $pekerjaan = Pekerjaan::findOrFail($id);
-        return view('lowongans.edit', ['pekerjaans' => $pekerjaans], compact('pekerjaan'));
+        $deskripsiArray = explode("\r", $pekerjaan->deskripsi);
+        $kualifikasiiArray = explode("\r", $pekerjaan->kualifikasi);
+        $benefitsArray = explode("\r", $pekerjaan->benefits);
+        $deskripsiArray = explode("\r", $pekerjaan->deskripsi);
+        return view('lowongans.edit', [
+            'pekerjaan' => $pekerjaan,
+            'deskripsi' => $deskripsiArray,
+            'kualifikasi' => $kualifikasiiArray,
+            'benefits' => $benefitsArray,
+        ]);
     }
 
     /**
@@ -70,7 +88,6 @@ class PekerjaanController extends Controller
     public function update(Request $request, string $id)
     {
         $pekerjaan = Pekerjaan::findOrFail($id);
-
         $pekerjaan->update($request->all());
         return redirect()->route('lowongans.index')->with('success','Lowongan Update Successfully');
 

@@ -83,19 +83,19 @@
             <div class="col-lg-4 mb-4">
               <label for="file">Kualifikasi</label>
               <div class="input-group ">
-                <input type="text" name="kualifikasi" class="form-control" value="{{ $pekerjaan->kualifikasi }}" placeholder="Masukkan Kualifikasi">
+                <textarea name="kualifikasi" class="form-control" value="{{ $pekerjaan->kualifikasi }}" placeholder="Masukkan Kualifikasi"></textarea>
               </div>
             </div>
             <div class="col-lg-4 mb-4">
               <label for="file">Benefits</label>
               <div class="input-group ">
-                <input type="text" name="benefits" class="form-control" value="{{ $pekerjaan->benefits }}" placeholder="Masukkan Benefits">
+                <textarea name="benefits" class="form-control" value="{{ $pekerjaan->benefits }}" placeholder="Masukkan Benefits"></textarea>
               </div>
             </div>
             <div class="col-lg-4 mb-4">
               <label for="file">Tentang Perusahaan</label>
               <div class="input-group ">
-                <input type="text" name="about" class="form-control" value="{{ $pekerjaan->about }}" placeholder="Masukkan Tentang Perusahaan">
+                <textarea name="about" class="form-control" value="{{ $pekerjaan->about }}" placeholder="Masukkan Tentang Perusahaan"></textarea>
               </div>
             </div>
             <div class="row m-auto">

@@ -146,7 +146,7 @@
                                 <p class="ms-3" style="font-size: 18px; font-weight: 600;">Pengalaman {{ $row->expected_experience }}</p>
                             </div>
                             <div class="input-group" style="margin-left: 180px;">
-                                <a href="{{ route('lowongan', $row->id) }}" style="color: #FA8A00; font-size: 18px; text-decoration: none;">Selengkapnya</a>
+                                <a href="{{ url('lowongan_lamar', $row->id) }}" style="color: #FA8A00; font-size: 18px; text-decoration: none;">Selengkapnya</a>
                                 <i class="bi bi-arrow-right-short fa-xl" role="button" style="color: #FA8A00; margin-top: 3px;"></i>
                             </div>
                         </div>

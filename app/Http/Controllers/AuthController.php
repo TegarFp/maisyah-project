@@ -30,9 +30,9 @@ class AuthController extends Controller
         ];
 
         if(Auth::attempt($user)){
-            return redirect()->intended('/home');
+            return redirect('/');
         }else{
-            return redirect('app.login');
+            return redirect('login');
         }
     }
 
@@ -75,9 +75,9 @@ class AuthController extends Controller
 
                 
         if(Auth::attempt($login)){
-            return redirect()->intended('/app.login');
+            return redirect()->intended('login');
         }else{
-            return redirect('app.register');
+            return redirect('register');
         }
 
         
