@@ -94,7 +94,7 @@
             <div class="col-lg-4 mb-4">
               <label for="file">Tentang Perusahaan</label>
               <div class="input-group ">
-                <input type="text" name="about" class="form-control" placeholder="Masukkan Tentang Perusahaan">
+                <textarea name="about" class="form-control" placeholder="Masukkan Tentang Perusahaan"></textarea>
               </div>
             </div>
             <div class="row m-auto">

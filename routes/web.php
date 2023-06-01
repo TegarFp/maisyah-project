@@ -25,7 +25,7 @@ use App\Http\Controllers\Auth;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('/');
 });
 
 Route::middleware('guest')->group(function () {

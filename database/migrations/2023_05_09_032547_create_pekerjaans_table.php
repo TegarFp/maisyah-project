@@ -18,14 +18,14 @@ return new class extends Migration
             $table->string('pt_id');
             $table->string('status_pekerjaan');
             $table->string('start_salary');
-            $table->string('end_salary')->nullable();
+            $table->string('end_salary');
             $table->string('expected_experience', 10);
             $table->string('fungsi_kerja');
             $table->string('level');
             $table->string('lulusan');
-            $table->string('deskripsi');
-            $table->string('kualifikasi');
-            $table->string('benefits');
+            $table->text('deskripsi');
+            $table->text('kualifikasi');
+            $table->text('benefits');
             $table->text('about');
             $table->timestamps();
 

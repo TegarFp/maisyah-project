@@ -37,10 +37,15 @@ class AuthController extends Controller
     }
 
 
-    public function logout()
+    public function logout(Request $request)
     {
         Auth::logout();
-        return redirect('login');
+ 
+        $request->session()->invalidate();
+     
+        $request->session()->regenerateToken();
+     
+        return redirect('/');
     }
 
     public function register()
@@ -75,7 +80,7 @@ class AuthController extends Controller
 
                 
         if(Auth::attempt($login)){
-            return redirect()->intended('login');
+            return redirect('/');
         }else{
             return redirect('register');
         }
