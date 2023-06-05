@@ -85,7 +85,7 @@
                     <div class="dropdown">
                       <button class="btn btn-secondary dropdown-toggle btn-sm" style="width: 100px;" type="button" data-bs-toggle="dropdown"
                           aria-expanded="false">
-                          Action
+                          Status
                       </button>
                       <ul class="dropdown-menu" style="min-width: 100%;">
                           <li>
